@@ -9,31 +9,43 @@ class Animal
     virtual void speak() = 0;
 };
 
-class Dog: public Animal
+class Mammal: public Animal
 {
     public:
-    void speak();
+    Mammal(){}
 };
 
-class Cat: public Animal
+class Bird: public Animal
 {
     public:
-    void speak();
+    Bird(){}
+};
+
+class Dog: public Mammal
+{
+    public:
+    void speak() override;
+};
+
+class Cat: public Mammal
+{
+    public:
+    void speak() override;
 };
 
 
-class Budgie: public Animal
+class Budgie: public Bird
 {
     public:
-    void speak();
+    void speak() override;
 };
 
 class Labrador:public Dog{
     public:
-    void speak();
+    void speak() override;
 };
 
 class Terrier:public Dog{
     public:
-    void speak();
+    void speak() override;
 };
