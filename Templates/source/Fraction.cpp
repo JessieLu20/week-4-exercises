@@ -39,6 +39,14 @@ Fraction Fraction::Add(Fraction other)
     return Fraction(new_num, new_den);
 }
 
+Fraction Fraction::operator*(Fraction other){
+    return Fraction::Multiply(other);
+}
+
+Fraction Fraction::operator+(Fraction other){
+    return Fraction::Add(other);
+}
+
 std::string Fraction::toString() const
 {
     return std::to_string(numerator) + "/" + std::to_string(denominator);
@@ -49,3 +57,4 @@ std::ostream& operator<<(std::ostream &out, const Fraction &f)
     out << f.toString();
     return out;
 }
+

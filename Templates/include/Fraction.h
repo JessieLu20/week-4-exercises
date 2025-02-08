@@ -13,6 +13,9 @@ class Fraction
 
     std::string toString() const;
 
+    Fraction operator*(Fraction other);
+    Fraction operator+(Fraction other);
+
     private:
 
     int numerator;

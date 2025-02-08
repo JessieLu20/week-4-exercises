@@ -12,6 +12,7 @@ T utilFunctions::quadratic(T a, T b, T c, T x)
     return ans;
 }
 
+// explicit define
 template int utilFunctions::quadratic(int, int, int, int);
 template double utilFunctions::quadratic(double, double, double, double);
 template float utilFunctions::quadratic(float, float, float, float);
